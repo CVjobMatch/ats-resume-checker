@@ -5,7 +5,7 @@
 
 <title>Match Resume to Job Description | CVJobMatch</title>
 
-<meta name="description" content="Compare your resume to a real job description. Find missing keywords, check your match score, and get ready-to-use fixes before you apply.">
+<meta name="description" content="Match your resume to a job description. Check your resume match score, find missing keywords, improve ATS alignment, and get ready-to-use resume fixes before you apply.">
 
 <link rel="canonical" href="https://www.cvjobmatch.ai/resume-vs-job-description">
 
@@ -14,18 +14,59 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Match Resume to Job Description",
-  "description": "Compare your resume to a real job description. Find missing keywords, check your match score, and get ready-to-use fixes before you apply.",
-  "author": {
-    "@type": "Organization",
-    "name": "CVJobMatch"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CVJobMatch"
-  },
-  "mainEntityOfPage": "https://www.cvjobmatch.ai/resume-vs-job-description"
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Match Resume to Job Description",
+      "description": "Match your resume to a job description. Check your resume match score, find missing keywords, improve ATS alignment, and get ready-to-use resume fixes before you apply.",
+      "author": {
+        "@type": "Organization",
+        "name": "CVJobMatch"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CVJobMatch"
+      },
+      "mainEntityOfPage": "https://www.cvjobmatch.ai/resume-vs-job-description"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I match my resume to a job description?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To match your resume to a job description, compare your resume with the job posting, identify missing keywords, align your skills and experience with the role requirements, rewrite vague bullet points, and include relevant tools, responsibilities, certifications, and achievements from the job description."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I match my resume to each job description?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Matching your resume to each job description helps ATS systems and recruiters understand why you are a strong fit. A resume with missing keywords, weak wording, or poor role alignment may get a lower match score and receive fewer interviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a resume match score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A resume match score shows how closely your resume matches a specific job description. It can highlight keyword gaps, missing skills, weak wording, and areas where your resume does not clearly align with the employer's requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a good resume still fail ATS screening?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A resume can be well written but still perform poorly if it does not use the same job titles, skills, tools, responsibilities, certifications, or industry keywords found in the job description."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
@@ -53,10 +94,28 @@ body {
   font-size: 18px;
 }
 
-h1 { font-size: 32px; margin-bottom: 10px; }
-h2 { margin-top: 35px; font-size: 22px; }
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
-p { line-height: 1.7; }
+h2 {
+  margin-top: 35px;
+  font-size: 22px;
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  line-height: 1.8;
+}
 
 .cta {
   display: block;
@@ -68,6 +127,10 @@ p { line-height: 1.7; }
   text-decoration: none;
   margin: 25px 0;
   font-weight: bold;
+}
+
+.cta:hover {
+  background: #1d4ed8;
 }
 
 .highlight {
@@ -86,12 +149,18 @@ p { line-height: 1.7; }
   margin: 20px 0;
 }
 
-.checklist {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  padding: 15px;
-  border-radius: 8px;
-  margin: 20px 0;
+.good {
+  background: #ecfdf5;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.bad {
+  background: #fef2f2;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
 }
 
 .box {
@@ -107,6 +176,19 @@ p { line-height: 1.7; }
   color: #2563eb;
   text-decoration: none;
 }
+
+.faq details {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 10px 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: bold;
+}
 </style>
 </head>
 
@@ -116,130 +198,245 @@ p { line-height: 1.7; }
 
 <div class="logo">CVJobMatch</div>
 
-<h1>Match Your Resume to a Job Description and Get More Interviews</h1>
+<h1>Match Your Resume to a Job Description</h1>
 
-<p><strong>If your resume or CV does not match the job description, recruiters may never see you as a strong fit.</strong></p>
+<p><strong>If your resume does not match the job description, recruiters and ATS systems may not recognize you as a strong fit.</strong></p>
 
 <p>
-CVJobMatch compares your resume with a real job description and shows your match score, missing keywords, weak wording, and ready-to-use fixes before you apply.
+CVJobMatch compares your resume with a real job description and shows your resume match score, missing keywords, weak wording, role alignment gaps, and ready-to-use resume fixes before you apply.
 </p>
 
 <div class="highlight">
-<p><strong>✔ See your resume match score instantly</strong></p>
+<p><strong>✔ Check your resume match score instantly</strong></p>
 <p><strong>✔ Find missing keywords from the job description</strong></p>
-<p><strong>✔ Get clear fixes to improve your CV for this job</strong></p>
+<p><strong>✔ Improve ATS alignment before applying</strong></p>
 </div>
 
 <a class="cta" href="https://www.cvjobmatch.ai/">
-Paste my CV and job description →
+Paste my resume and job description →
 </a>
 
 <p style="text-align:center; font-size:14px; color:#6b7280;">
 No signup • Takes 60 seconds • Instant results
 </p>
 
-<h2>What does it mean to match your resume to a job description?</h2>
+<h2>What does it mean to match a resume to a job description?</h2>
 
 <p>
-Matching your resume means aligning it directly with the job posting so ATS systems and recruiters can quickly see that your skills, experience, and wording fit the role.
+Matching your resume to a job description means aligning your resume with the exact role you are applying for. That includes job titles, skills, tools, certifications, responsibilities, industry terms, and measurable achievements that appear in the job posting.
 </p>
 
-<ul>
-<li>Use important keywords from the job description</li>
-<li>Highlight relevant skills and experience</li>
-<li>Match job titles, responsibilities, tools, and requirements</li>
-<li>Show clear alignment with what the employer is asking for</li>
-</ul>
-
-<h2>How resume matching works</h2>
+<p>
+The goal is not to copy the job description. The goal is to make your relevant experience easier for ATS systems and recruiters to recognize.
+</p>
 
 <div class="flow">
-Resume → Keyword Match → Match Score → Interview or Rejection
+Resume → Job Description → Keyword Match → Match Score → Interview or Rejection
+</div>
+
+<h2>Why resume matching matters</h2>
+
+<p>
+Many candidates are qualified but still get ignored because their resume uses different wording from the job post. ATS systems and recruiters often look for specific keywords, skills, tools, and role requirements.
+</p>
+
+<p>
+A resume can look professional and still fail for a specific job if it does not clearly match the employer’s language.
+</p>
+
+<h2>What CVJobMatch checks</h2>
+
+<ul>
+<li>Resume match score against a real job description</li>
+<li>Missing keywords from the job posting</li>
+<li>Skills, tools, certifications, and responsibilities not shown clearly enough</li>
+<li>Weak or generic bullet points that reduce role alignment</li>
+<li>ATS wording gaps that may lower your chances</li>
+<li>Ready-to-use suggestions to improve your resume for that job</li>
+</ul>
+
+<a class="cta" href="https://www.cvjobmatch.ai/">
+Check my resume match score →
+</a>
+
+<h2>Common reasons your resume does not match the job description</h2>
+
+<h3>Missing job description keywords</h3>
+<div class="bad">
+Job description says: project management, stakeholder communication, Jira, delivery tracking<br>
+Resume says: helped with tasks and worked with teams
 </div>
 
 <p>
-If your resume match score is too low, your application can look weaker than it really is. This often happens when your experience is relevant, but the wording does not match the job description.
+The experience may be relevant, but the wording does not clearly match what the employer is searching for.
 </p>
 
-<h2>Why most resumes do not match</h2>
+<h3>Generic resume wording</h3>
+<div class="bad">
+Hardworking • Team player • Responsible • Assisted team • Helped customers
+</div>
 
-<ul>
-<li>Missing keywords from the job description</li>
-<li>Using different wording than the employer uses</li>
-<li>Including experience that is not relevant to this role</li>
-<li>Sending the same resume to every job</li>
-<li>Not making the strongest skills obvious enough</li>
-</ul>
+<p>
+Generic wording does not show the specific skills, tools, responsibilities, or outcomes required for the role.
+</p>
 
-<p><strong>Many resumes only match part of the job requirements, even when the candidate has relevant experience.</strong></p>
+<h3>Weak job title alignment</h3>
+<div class="bad">
+Job title: Customer Success Manager<br>
+Resume title: Customer Support Worker
+</div>
 
-<a class="cta" href="https://www.cvjobmatch.ai/">
-Analyze my resume against a real job →
-</a>
+<p>
+A close match can still be missed if your resume does not include the target job title or a clear variation when it honestly fits your experience.
+</p>
+
+<h3>Relevant experience is hidden</h3>
+<div class="bad">
+Important skills appear too low on the resume or are not connected to measurable results.
+</div>
+
+<p>
+Recruiters scan quickly. Your strongest role-specific experience should be easy to see in the summary, skills section, and bullet points.
+</p>
 
 <h2>Example of a poor resume match</h2>
 
 <p>
-Job description: <strong>"Project management, stakeholder communication, delivery tracking"</strong><br>
-Resume: <strong>"Managed tasks and helped the team"</strong>
+Job description: <strong>"Project management, stakeholder communication, Jira, delivery tracking, reporting"</strong><br>
+Resume says: <strong>"Managed tasks and helped the team"</strong>
 </p>
 
-<p>
-The resume may describe real experience, but it does not clearly match the keywords, responsibilities, or language in the job description.
-</p>
-
-<p><strong>This kind of mismatch can reduce your chance of getting shortlisted.</strong></p>
-
-<h2>Quick resume match check</h2>
-
-<div class="checklist">
-<ul>
-<li>Does your resume include the exact job title or a close variation?</li>
-<li>Are your skills written in the same language as the job description?</li>
-<li>Does your experience clearly match the role requirements?</li>
-<li>Are your strongest achievements easy to find?</li>
-<li>Would a recruiter understand the fit in under 10 seconds?</li>
-</ul>
+<div class="bad">
+Managed tasks • Helped team • Worked on reports
 </div>
 
-<p><strong>If not, your resume may need stronger job-specific wording before you apply.</strong></p>
+<p>
+This resume may describe real experience, but it does not clearly show the project management, stakeholder communication, Jira, delivery tracking, or reporting keywords from the job description.
+</p>
+
+<h2>Better resume wording</h2>
+
+<div class="good">
+Managed project tasks in Jira, coordinated stakeholder communication, tracked delivery milestones, prepared weekly status reports, and improved project visibility for cross-functional teams.
+</div>
+
+<p>
+The stronger version uses clearer job description keywords and makes the resume easier to match.
+</p>
+
+<h2>Quick resume match checklist</h2>
+
+<ul>
+<li>Does your resume include the exact job title or a close variation?</li>
+<li>Does your summary clearly target the role?</li>
+<li>Does your skills section include relevant keywords from the job description?</li>
+<li>Do your bullet points mention the tools, systems, and responsibilities in the job post?</li>
+<li>Do you show measurable achievements instead of vague tasks?</li>
+<li>Have you removed irrelevant information that distracts from the role?</li>
+<li>Would a recruiter understand your fit in under 10 seconds?</li>
+</ul>
+
+<p><strong>If the answer is no, your resume may need stronger job-specific wording before you apply.</strong></p>
+
+<h2>Resume keywords to compare</h2>
+
+<h3>Job title keywords</h3>
+<div class="good">
+Project Manager • Data Analyst • Customer Success Manager • Registered Nurse • Risk Analyst • Software Engineer • Marketing Manager
+</div>
+
+<h3>Skill keywords</h3>
+<div class="good">
+Data analysis • Stakeholder management • Customer onboarding • Risk assessment • Patient care • Project delivery • Troubleshooting • Reporting
+</div>
+
+<h3>Tool keywords</h3>
+<div class="good">
+Excel • SQL • Salesforce • HubSpot • Jira • Power BI • Tableau • Python • Epic • ServiceNow • Zendesk
+</div>
+
+<h3>Outcome keywords</h3>
+<div class="good">
+Reduced costs • Increased revenue • Improved retention • Reduced churn • Improved efficiency • Faster reporting • Higher customer satisfaction
+</div>
 
 <h2>How to improve your resume match score</h2>
 
 <ul>
+<li><a href="/resume-keyword-optimizer">Find missing resume keywords</a></li>
+<li><a href="/resume-match-tool">Check your resume match score</a></li>
+<li><a href="/ats-resume-checker">Use the ATS resume checker</a></li>
+<li><a href="/best-resume-keywords">Use stronger resume keywords</a></li>
+<li><a href="/resume-summary-examples">Improve your resume summary</a></li>
 <li>Use relevant wording from the job description naturally</li>
-<li>Highlight measurable achievements that support the role</li>
-<li>Remove or reduce irrelevant information</li>
+<li>Rewrite vague bullet points into specific achievements</li>
 <li>Move the most relevant experience higher on the page</li>
-<li><a href="/resume-match-tool">Check your match score before applying</a></li>
+<li>Include measurable results when possible</li>
 </ul>
+
+<p><strong>The goal is not keyword stuffing. The goal is to make your resume match the job more clearly.</strong></p>
+
+<a class="cta" href="https://www.cvjobmatch.ai/">
+Get exact resume fixes for this job →
+</a>
 
 <div class="box">
 <h2>Improve your resume step-by-step</h2>
 <ul>
 <li><a href="/resume-match-tool">Check your resume match score</a></li>
 <li><a href="/resume-keyword-optimizer">Find missing resume keywords</a></li>
+<li><a href="/ats-resume-checker">Check ATS compatibility</a></li>
 <li><a href="/best-resume-keywords">See the best resume keywords</a></li>
-<li><a href="/ats-resume-checker">Check if your resume is ATS-friendly</a></li>
-<li><a href="/resume-doesnt-match-job-description">Why your resume does not match the job description</a></li>
+<li><a href="/resume-keywords-for-jobs">Resume keywords for jobs</a></li>
 </ul>
 </div>
 
-<p style="text-align:center;">
-👉 Paste your resume and a real job description to see exactly what to fix.
-</p>
+<h2>Match resume to job description FAQ</h2>
 
-<a class="cta" href="https://www.cvjobmatch.ai/">
-Get exact resume fixes for this job →
-</a>
+<div class="faq">
+
+<details>
+<summary>How do I match my resume to a job description?</summary>
+<p>
+Compare your resume with the job posting, identify missing keywords, align your skills and experience with the role requirements, rewrite vague bullet points, and include relevant tools, responsibilities, certifications, and achievements from the job description.
+</p>
+</details>
+
+<details>
+<summary>Why should I match my resume to each job description?</summary>
+<p>
+Matching your resume to each job description helps ATS systems and recruiters understand why you are a strong fit. A resume with missing keywords, weak wording, or poor role alignment may get a lower match score and receive fewer interviews.
+</p>
+</details>
+
+<details>
+<summary>What is a resume match score?</summary>
+<p>
+A resume match score shows how closely your resume matches a specific job description. It can highlight keyword gaps, missing skills, weak wording, and areas where your resume does not clearly align with the employer’s requirements.
+</p>
+</details>
+
+<details>
+<summary>Can a good resume still fail ATS screening?</summary>
+<p>
+Yes. A resume can be well written but still perform poorly if it does not use the same job titles, skills, tools, responsibilities, certifications, or industry keywords found in the job description.
+</p>
+</details>
+
+</div>
 
 <h2>Related pages</h2>
 
 <div class="links">
-<a href="/not-getting-interviews">Why you're not getting interviews</a>
+<a href="/resume-match-tool">Resume match tool</a>
+<a href="/resume-keyword-optimizer">Resume keyword optimizer</a>
+<a href="/ats-resume-checker">ATS resume checker</a>
+<a href="/best-resume-keywords">Best resume keywords</a>
+<a href="/resume-keywords-for-jobs">Resume keywords for jobs</a>
+<a href="/resume-doesnt-match-job-description">Resume does not match job description</a>
+<a href="/why-is-my-resume-not-getting-noticed">Why is my resume not getting noticed?</a>
 <a href="/resume-not-getting-responses">Resume not getting responses</a>
-<a href="/resume-keeps-getting-rejected">Why resumes get rejected</a>
-<a href="/ats-resume-test">ATS resume test</a>
+<a href="/resume-keeps-getting-rejected">Resume keeps getting rejected</a>
 <a href="/how-to-get-more-interviews">How to get more interviews</a>
 </div>
 
